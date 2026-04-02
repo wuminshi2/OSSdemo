@@ -1,0 +1,11 @@
+spring:
+  profiles:
+    active: dev
+
+demo:
+  alioss:
+    endpoint: ${demo.alioss.endpoint}
+    access-key-id: ${demo.alioss.access-key-id}
+    access-key-secret: ${demo.alioss.access-key-secret}
+    bucket-name: ${demo.alioss.bucket-name}
+    region: ${demo.alioss.region}
