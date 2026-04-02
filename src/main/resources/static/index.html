@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>OSS 图片演示</title>
+  <link rel="stylesheet" href="/styles.css"/>
+</head>
+<body>
+<div class="container">
+  <h1>OSS 图片演示（上传 + 展示）</h1>
+
+  <form id="uploadForm" class="upload-card">
+    <label class="label">
+      选择图片：
+      <input id="fileInput" type="file" accept="image/*" required />
+    </label>
+
+    <button id="uploadBtn" type="submit">上传到 OSS</button>
+
+    <div id="status" class="status" role="status"></div>
+  </form>
+
+  <h2>已上传图片</h2>
+  <div id="gallery" class="gallery"></div>
+</div>
+
+<script src="/app.js"></script>
+</body>
+</html>
+

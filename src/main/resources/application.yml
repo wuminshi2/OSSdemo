@@ -1,6 +1,15 @@
 spring:
   profiles:
     active: dev
+  datasource:
+    driver-class-name: ${demo.datasource.driver-class-name}
+    url: jdbc:mysql://${demo.datasource.host}:${demo.datasource.port}/${demo.datasource.database}?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&useSSL=false&allowPublicKeyRetrieval=true
+    username: ${demo.datasource.username}
+    password: ${demo.datasource.password}
+  servlet:
+    multipart:
+      max-file-size: 20MB
+      max-request-size: 20MB
 
 demo:
   alioss:
