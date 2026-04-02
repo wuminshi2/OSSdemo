@@ -16,7 +16,7 @@ import java.util.UUID;
 import static com.baomidou.mybatisplus.extension.toolkit.Db.save;
 
 
-@RestController("/images")
+@RestController
 public class FileController {
     @Autowired
     private AliOssUtil aliOssUtil;
